@@ -1,5 +1,4 @@
 import pyautogui
-import pandas
 import time
 
 #ABRIR O GOOGLE CHROME
@@ -9,15 +8,15 @@ pyautogui.write('chrome')
 pyautogui.press('enter')
 
 #PESQUISA O YOUTUBE
-time.sleep(3)
+time.sleep(2)
 pyautogui.write('youtube.com')
 pyautogui.press('enter')
-time.sleep(2)
+time.sleep(1)
 pyautogui.click(x=777, y=155)
-pyautogui.write('Mulher segura')
+pyautogui.typewrite('Mulher segura', interval=0.1)
 pyautogui.press('enter')
-time.sleep(3)
+time.sleep(2)
 pyautogui.click(x=670, y=500)
 pyautogui.press('enter')
-time.sleep(5)
+time.sleep(3)
 input("Pressione Enter para fechar...")
